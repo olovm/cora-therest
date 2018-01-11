@@ -43,7 +43,9 @@ public class SystemInitializer implements ServletContextListener {
 
 	@Override
 	public void contextInitialized(ServletContextEvent arg0) {
+
 		servletContext = arg0.getServletContext();
+
 		try {
 			tryToInitialize();
 		} catch (InvocationTargetException e) {
